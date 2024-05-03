@@ -1,0 +1,18 @@
+<form action="/add" method="POST">
+    <p>Title: </p>
+    <input type="text" name="title">
+    <p>Subtitle:</p>
+    <input type="text" name="subtitle">
+    <p>Content:</p>
+    <input type="text" name="content">
+    <p>Risk: </p>
+     <select name="risk" id="risk">
+      <option value="low" {{#ifEqual alert.risk "low"}}selected{{/ifEqual}}>Low</option>
+      <option value="medium" {{#ifEqual alert.risk "medium"}}selected{{/ifEqual}}>Medium</option>
+      <option value="high" {{#ifEqual alert.risk "high"}}selected{{/ifEqual}}>High</option>
+    </select>
+    <p>Affected Regions:</p>
+    <input type="text" name="affectedRegions">
+    <button type="submit">Cadastrar postagem</button>
+</form>
+

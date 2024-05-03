@@ -1,0 +1,17 @@
+<a href="/cad">Add post</a>
+<a href="/json">Exibir em Json</a>
+<h1>Lista de alertas: </h1>
+<br>
+<br>
+{{#each alerts}}
+    <h1>Titulo: {{title}}</h1>
+    <h2>Subtitulo: {{subtitle}}</h2>
+    <p>Conteúdo: {{content}}</p>
+    <p>Risco: {{risk}}</p>
+    <p>Regiões afetadas: {{affectedRegions}}</p>
+    <small>{{createdAt}}</small>
+    <a href="/deletar/{{id}}"><button>Deletar</button></a>
+    <a href="/update/{{id}}"><button>Editar</button></a>
+    <hr>
+{{/each}}
+
