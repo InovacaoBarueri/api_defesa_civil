@@ -16,6 +16,9 @@ const Alerts = db.sequelize.define('postagens', {
     affectedRegions: {
         type: db.Sequelize.STRING
     },
+    image: {
+        type: db.Sequelize.STRING
+    },
 });
 
 
